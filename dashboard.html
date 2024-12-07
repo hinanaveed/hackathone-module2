@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Dashboard</h1>
+            <span id="greeting"></span>, <span id="user-name"></span>!
+        </div>
+        <div>
+            <a href="#" onclick="handleLogout()">Logout</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </header>
+    <main class="dashboard">
+        <h2>Post a New Blog</h2>
+        <form id="blog-form" onsubmit="handleNewBlog(event)">
+            <input id="blog-title" type="text" placeholder="Blog Title" required>
+            <textarea id="blog-body" placeholder="Blog Body" rows="5" required></textarea>
+            <button type="submit">Publish</button>
+        </form>
+        <h2>Your Blogs</h2>
+        <div id="user-blogs"></div>
+    </main>
+</body>
+</html>

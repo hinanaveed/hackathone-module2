@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Profile</h1>
+        </div>
+        <div>
+            <a href="#" onclick="handleLogout()">Logout</a>
+            <a href="dashboard.html">Dashboard</a>
+        </div>
+    </header>
+    <main class="dashboard">
+        <h2>Update Profile</h2>
+        <form id="profile-form" onsubmit="handleProfileUpdate(event)">
+            <input id="update-first-name" type="text" placeholder="First Name" required>
+            <input id="update-last-name" type="text" placeholder="Last Name" required>
+            <input id="update-email" type="email" placeholder="Email" disabled>
+            <input id="update-password" type="password" placeholder="New Password" required>
+            <button type="submit">Update Profile</button>
+        </form>
+    </main>
+</body>
+</html>
